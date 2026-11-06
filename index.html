@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>满蒙词典 · 首页</title>
+<style>
+:root{--bg:#f7f8fa;--panel:#fff;--line:#e3e6ea;--ink:#1f2329;--muted:#6b7280;--accent:#2f6df0;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Segoe UI","PingFang SC","Microsoft YaHei",system-ui,sans-serif;font-size:14px;line-height:1.6;}
+header{background:linear-gradient(135deg,#243b6b,#2f6df0);color:#fff;padding:48px 20px 40px;text-align:center;}
+header h1{margin:0 0 10px;font-size:30px;font-weight:700;letter-spacing:2px;}
+header p{margin:0 auto;max-width:680px;color:rgba(255,255,255,.88);font-size:14px;}
+main{max-width:960px;margin:-24px auto 0;padding:0 16px 40px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:18px 20px;text-decoration:none;color:var(--ink);
+  box-shadow:0 1px 4px rgba(0,0,0,.05);transition:box-shadow .15s,transform .15s;}
+.card:hover{box-shadow:0 4px 14px rgba(47,109,240,.18);transform:translateY(-2px);}
+.ct{font-size:17px;font-weight:600;}
+.cn{color:var(--accent);font-size:13px;font-weight:600;margin:4px 0 6px;}
+.cd{color:var(--muted);font-size:12.5px;}
+footer{max-width:960px;margin:0 auto;padding:0 16px 32px;color:var(--muted);font-size:12px;}
+footer a{color:var(--accent);}
+</style>
+</head>
+<body>
+<header>
+  <h1>满蒙词典</h1>
+  <p>基于东北大学文学研究科附属东亚能源・环境研究教育中心（CNEAS）在线词典数据集整理的静态检索站，
+  原站不可用时的备用镜像。全部检索在浏览器本地完成，无需联网查询数据库。</p>
+</header>
+<main>
+  <div class="grid">
+<a class="card" href="mongol.html">
+  <div class="ct">蒙汉词典</div>
+  <div class="cn">52,673 条</div>
+  <div class="cd">蒙古文 ↔ 汉语。支持蒙古文、鲍培式转写、国际音标、中文释义全文检索，按 32 个首字母跳转。</div>
+</a>
+<a class="card" href="manchu.html">
+  <div class="ct">满汉词典（三部合并）</div>
+  <div class="cn">95,852 条</div>
+  <div class="cd">满文 ↔ 汉语，合并满汉大辞典 / 新满汉 / 満漢和三部，含来源词典标注与跨词典共现去重。</div>
+</a>
+<a class="card" href="manchu_6.html">
+  <div class="ct">满汉大辞典</div>
+  <div class="cn">45,413 条</div>
+  <div class="cd">三部中规模最大的一部，单独检索。</div>
+</a>
+<a class="card" href="manchu_72.html">
+  <div class="ct">新满汉</div>
+  <div class="cn">33,235 条</div>
+  <div class="cd">新满汉大词典，单独检索。</div>
+</a>
+<a class="card" href="manchu_55.html">
+  <div class="ct">満漢和</div>
+  <div class="cn">18,662 条</div>
+  <div class="cd">満漢和辞典，单独检索。</div>
+</a>
+<a class="card" href="officials.html">
+  <div class="ct">官名摘抄（满汉大辞典）</div>
+  <div class="cn">2,336 条</div>
+  <div class="cd">从满汉大辞典摘出的官职 / 官署 / 封爵相关词条，带类别与置信度标注，可按高/中/低筛选。</div>
+</a>
+  </div>
+</main>
+<footer>
+  数据来源：<a href="http://hkuri.cneas.tohoku.ac.jp/project1/mongol/list?groupId=12">CNEAS 蒙汉词典</a> ·
+  <a href="http://hkuri.cneas.tohoku.ac.jp/p06/manchu/list?groupId=11">CNEAS 满汉词典</a>。
+  仅供学习研究使用。满文 / 蒙文竖排显示需本机安装 Mongolian Universal White 或 Noto Sans Mongolian 字体。
+</footer>
+</body>
+</html>
