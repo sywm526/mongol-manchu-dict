@@ -1,8 +1,8 @@
 name: Deploy to GitHub Pages
 
+# Pages 现使用「从 main 分支构建」(legacy)，push 会自动发布，无需 Actions 部署。
+# 保留此文件仅作手动备用，去掉 push 触发以免每次推送都产生失败记录。
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
